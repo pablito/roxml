@@ -17,7 +17,6 @@ $hoe = Hoe.new('roxml', ROXML::VERSION) do |p|
   p.rubyforge_name       = p.name
   p.extra_deps         = [
    ['activesupport','>= 2.1.0'],
-   ['libxml-ruby', '>= 1.0.0']
   ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"],

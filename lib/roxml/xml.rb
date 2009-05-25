@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__))
+
 module ROXML
   unless const_defined? 'XML_PARSER'
     begin
@@ -12,7 +14,7 @@ WARNING
     end
   end
 
-  require File.join(File.dirname(__FILE__), 'xml/parsers', XML_PARSER)
+  require File.join('xml/parsers', XML_PARSER)
 
   module XML
     class Node
